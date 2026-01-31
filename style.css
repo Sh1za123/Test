@@ -1,0 +1,333 @@
+:root{
+  --dark: #19191B;
+  --gray: #696871;
+  --purple: #5454D4;
+  --orange: #FF7143;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-padding: 100px;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "DM Sans", sans-serif;
+}
+.head{
+  top: 0;
+  padding: 30px 30px;
+  position: fixed;
+  width: 100%;
+  background: #ffffff8a;
+  box-shadow: 0px 0px 50px 40px #ffffff8f;
+  z-index: 999;
+}
+[class*="__cont"]{
+  max-width: 1069px;
+  margin-inline: auto;
+}
+.head__nav{
+  display: flex;
+  justify-content: space-between;
+}
+.head__list{
+  display: flex;
+  gap: 49px;
+  align-items: center;
+}
+ul{
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: -0.47px;
+  color: var(--gray);
+}
+.head__list-link{
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: -0.47px;
+  color: var(--gray);
+  transition: color 0.33s;
+}
+a{
+  text-decoration: none;
+}
+.head__list-link.active{
+  color: var(--dark);
+  border-bottom: 2px solid var(--purple);
+  padding-bottom: 10px;
+}
+.head__list-link :hover{
+  color: var(--dark);
+
+}
+ul :hover{
+  color: var(--dark);
+  
+}
+.head__button, .hero__button{
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: -0.53px;
+  color: white;
+  padding: 19px 59px;
+  border-radius: 10px;
+  transition: 0.33s;
+}
+.head__button{
+    background: var(--orange);
+}
+.head__button:hover, .hero__button:hover{
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  background-color: #ff5e00;
+  align-items: center;
+}
+.hero__button:hover{
+ background-color: #5e5efd ; 
+}
+.head__button:hover{
+ background-color: #ff5e00; 
+  
+}
+.hero{
+  padding-block: 70px 0px;
+}
+.hero__cont{
+  position: relative;
+}
+.hero__image{
+  position: absolute;
+  top: 0;
+  right: -75.1px;
+}
+.hero__title{
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: -2.5px;
+  line-height: 77px;
+  color: var(--dark);
+}
+.hero__disc{
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.63px;
+  line-height: 30px;
+  color: var(--gray);
+  margin-top: 30px;
+}
+.hero__buttons{
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+.hero__button{
+  background: var(--purple);
+}
+.hero__scroll{
+  margin-top: 5px;
+}
+.hero__content{
+  max-width: 423px;
+  padding-block: 92px;
+}
+.companies{
+  padding-block: 30px;
+}
+.companies__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features {
+    padding-block: 120px;
+}
+.features__container {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 459px;
+}
+.feature__title{
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: -1,56px;
+  line-height: 57px;
+}
+.feature__desc{
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  letter-spacing: -0.63px;
+  line-height: 30px;
+  color: var(--gray);
+}
+.feature__link{
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: -0.63px;
+  color: var(--purple);
+}
+.feature__link:hover{
+  text-decoration: underline;
+}
+main{
+  margin-top: 141px;
+}
+.mini-features{
+  padding-block: 32px;
+}
+.mini-features__cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 74px;
+}
+.mini-feature{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.mini-feature__header{
+    display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.mini-feature__disc{
+  font-family: "Mulish", sans-serif;
+  letter-spacing: -0.5px;
+  line-height: 24px;
+  color: var(--gray);
+}
+.mini-feature__image{
+  height: 97px;
+}
+.sub{
+  padding-block: 118px 158px;
+}
+.sub__cont{
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+}
+.sub__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub__title{
+  font-size: bold;
+  font-size: 60px;
+  letter-spacing: -1.88px;
+  list-style: none;
+  line-height: 70px;
+}
+.sub__tabs{
+  display: flex;
+  border-block:  5px solid #f7f7fb;
+  border-inline: 6px solid #f7f7fb;
+  border-radius: 10px;
+}
+.sub__tab{
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  border: none;
+  background: #F7F7FB;
+  padding: 17px 56px;
+  border-radius: 0px 10px 10px 0px;
+  color: var(--dark);
+  cursor: pointer;
+}
+.sub__tab.active{
+  background: var(--purple);
+  border-radius: 10px 0px 0px 10px;
+  color: white;
+}
+.sub__plans{
+  display: grid;
+  grid-template-columns: 1fr 1.14fr 1fr;
+  gap: 17px;
+}
+.sub__plan{
+  padding: 34px 23px 27px;
+  background: #F8F8F8;
+  border-radius: 10px;
+  text-align: center;
+}
+.sub__plan-title{
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -0.56px;
+  line-height: 28px;
+  color: var(--gray);
+}
+.sub__plan-title{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.56px;
+    line-height: 28px;
+    color: var(--gray);
+}
+.sub__plan-price > span{
+  font-size: 28px;
+}
+.sub__plan-price{
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: -1.03px;
+  line-height: 56px;
+  color: var(--dark);
+  margin-top: 22px;
+}
+.sub__plan-features{
+  font-family: "Mulish", sans-serif;
+  font-size: 17px;
+  letter-spacing: -0.53;
+  line-height: 50px;
+  color: var(--gray);
+  margin-top: 28px;
+}
+.sub__plan-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding-block: 19px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: -0.53px;
+  color: var(--purple);
+  margin-top: 36px;
+}
+.sub__plan.active{
+  background: var(--orange);
+}
+.sub__plan.active .sub__plan-title{
+  color: rgba(255, 255, 255, 70%);
+}
+.sub__plan.active .sub__plan-price,
+.sub__plan.active .sub__plan-features,
+.sub__plan.active .sub__plan-button{
+    color: white;
+}
+.sub__plan.active .sub__plan-button{
+    background: #9F3919;
+}
