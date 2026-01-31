@@ -104,7 +104,7 @@ ul :hover{
 .hero__image{
   position: absolute;
   top: 0;
-  right: -75.1px;
+  right: -75px;
 }
 .hero__title{
   font-weight: bold;
@@ -112,7 +112,8 @@ ul :hover{
   letter-spacing: -2.5px;
   line-height: 77px;
   color: var(--dark);
-}
+  align-items: start;
+  }
 .hero__disc{
   font-family: "Mulish", sans-serif;
   font-size: 20px;
@@ -133,7 +134,7 @@ ul :hover{
   margin-top: 5px;
 }
 .hero__content{
-  max-width: 423px;
+  margin: auto;
   padding-block: 92px;
 }
 .companies{
